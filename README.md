@@ -1,11 +1,20 @@
-## **Overview**
+# Linear-style issue tracker
 
-This project is a **Linear Clone: AI-Powered Project Management System**.
+A Linear-style issue tracker built with React, TypeScript and Redux Toolkit, with a small Express REST API.
 
-The project consists of two parts:
+## **Features**
 
-- **Server** – a basic REST API providing endpoints for managing To-Dos.
-- **Front-End** – built with Vite using React + TypeScript.
+- List and Kanban views, grouped by status (todo, in progress, done)
+- Optimistic create, update and delete
+- Due dates and assignees
+- Search and status filters
+- Light and dark theme
+- Custom Redux persistence middleware
+
+The project has two parts:
+
+- **Server**: a small REST API for the issues (in-memory, no auth).
+- **Front end**: Vite, React and TypeScript.
 
 ## **API**
 
@@ -18,30 +27,6 @@ The API is a simple To-Do REST API and provides the following endpoints:
 | Create | Create a new To-Do | POST | `/` |
 | Update | Update a To-Do | PUT | `/:id` |
 | Destroy | Delete a To-Do | DELETE | `/:id` |
-
-### **Core Requirements**
-
-At a minimum, users should be able to:
-
-- Create a new To-Do
-- View all To-Dos
-- Update a To-Do
-- Delete a To-Do
-- Mark a To-Do as complete or incomplete
-
-The user interface should perform optimistic updates when applying these actions.
-
-### **Beyond the Core Requirements**
-
-- Add a calendar view
-- Add a Kanban view
-- Add persistence to the server
-- Filtering (e.g. show only completed or incomplete To-Dos)
-- Search features
-- Due dates
-- Assignees
-- Tags or categories
-- Basic stats (e.g. "5 of 10 tasks complete")
 
 ## **Prerequisites**
 
